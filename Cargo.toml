@@ -1,0 +1,18 @@
+[package]
+edition = "2024"
+name = "{{project-name}}"
+version = "0.1.0"
+license = "MIT"
+license-file = "LICENSE"
+
+[dependencies]
+anyhow = "1.0.104"
+
+[profile.release]
+strip = true
+lto = true
+panic = "abort"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
