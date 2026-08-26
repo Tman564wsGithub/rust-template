@@ -3,7 +3,6 @@ edition = "2024"
 name = "{{project-name}}"
 version = "0.1.0"
 license = "MIT"
-license-file = "LICENSE"
 
 [dependencies]
 color-eyre = "0.6.5"
