@@ -1,9 +1,7 @@
-use eyre::Result;
-
-mod lib;
+use color_eyre::Result;
 
 fn main() -> Result<()> {
-    lib::greet("{{project-name}}");
+    {{crate_name}}::greet("{{project-name}}");
 
     Ok(())
 }
