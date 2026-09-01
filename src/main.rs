@@ -1,6 +1,6 @@
-use color_eyre::Result;
+use std::error::Error;
 
-fn main() -> Result<()> {
+fn main() -> Result<(), Box<dyn Error>> {
     {{crate_name}}::greet("{{project-name}}");
 
     Ok(())
